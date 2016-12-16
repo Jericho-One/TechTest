@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout" parent="AppTheme.TextView">
+        <item name="android:editable">false</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+    </style>
+</resources>

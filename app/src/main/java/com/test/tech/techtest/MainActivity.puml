@@ -1,0 +1,22 @@
+@startuml
+
+title MainActivity
+hasPermissionAndConnceted -> hasNetworkConnection
+hasNetworkConnection -> loadURL
+loadURL -> AsyncTask
+
+AsyncTask --> server : request
+server --> AsyncTask : response
+AsyncTask ----> XMLParser : response
+XMLParser --> AsyncTask : adslist
+
+AsyncTask ----> ListFragment : adsList
+
+ListFragment --> ListAdapter
+
+ListAdapter --> onAdClick : ad
+
+onAdClick --> AdvertFragment : ad
+
+
+@enduml

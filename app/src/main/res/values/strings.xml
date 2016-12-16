@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tech Test</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="list_view">List View</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="xml_error">XML Error</string>
+    <string name="product_rating">Product Rating</string>
+    <string name="product_name">Product Name</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/selectable_item_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/min_touch_size">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/image_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/default_padding"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/default_padding"
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            tools:src="@drawable/common_google_signin_btn_icon_dark"/>
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_progress"
+            android:layout_toEndOf="@+id/product_image"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/default_padding"
+            android:textSize="@dimen/list_text_size"
+            tools:text="Product Name that could grow to be very long"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/product_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:layout_margin="@dimen/default_padding"
+        android:layout_gravity="center"
+        android:textSize="@dimen/list_text_size"
+        tools:text="6"/>
+
+</LinearLayout>
